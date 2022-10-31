@@ -1,7 +1,7 @@
 {
-  "name": "legal-tech",
+  "name": "derecholand",
   "version": "0.1.0",
-  "homepage": "https://xaviSalazar.github.io/legal-tech",
+  "homepage": "https://criscobarmon.github.io/derecholand",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
