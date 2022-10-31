@@ -1,0 +1,19 @@
+#Specify a base image
+FROM node:alpine
+
+#Setup working directory
+WORKDIR '/app'
+
+#Copy the dependencies file
+COPY package.json .
+
+#Install dependencies
+RUN npm install --legacy-peer-deps
+
+#Copy remaining files
+COPY . .
+
+RUN mkdir node_modules/.cache && chmod -R 777 node_modules/.cache
+
+#Start the application
+CMD ["npm", "run", "start"]
