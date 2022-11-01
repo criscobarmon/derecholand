@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 // material
-import { Box, Card, Link, Grid, Typography, Stack } from '@mui/material';
+import {Card, Grid, Typography, Stack } from '@mui/material';
 // components
 import { styled } from '@mui/material/styles';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -25,7 +25,7 @@ const MyImage = ({ name,  image_url}) => (
         position='absolute'
         src={image_url} // use normal <img> attributes as props
         />
-  );
+);
 
 const ProductImgStyle = styled('img')({
     top: 0,
